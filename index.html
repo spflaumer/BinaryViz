@@ -1,12 +1,19 @@
 <!doctype html>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
     background: #1e1e2e;
     height: 100%;
     width: 100%;
+
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 </style>
 
@@ -16,21 +23,21 @@ html, body {
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link href="./_app/immutable/assets/2.PiHhQN04.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CEVSCA_t.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BMnhBfXF.js">
+		<link href="./_app/immutable/assets/2.Dvl7FkRD.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.B90Bm8HO.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.bazigjyb.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.DUGBj5R0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.B1FgzP8n.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.BYVMK9hN.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.BZmzEhxT.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.ClfRy5IC.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.DUZlQjn2.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <main><div class="bdigit-list svelte-1ljy8zp"><div class="bdigit svelte-1ljy8zp"><p class="bdigit-val svelte-1ljy8zp">0</p> <p class="ddigit-val svelte-1ljy8zp">0</p> <button class="bdigit-toggle svelte-1ljy8zp" data-svelte-h="svelte-yqa8df">Toggle</button> </div></div> <div class="ddigit-total-container svelte-1ljy8zp"><p class="ddigit-total svelte-1ljy8zp">0</p> <p class="ddigit-bitwidth svelte-1ljy8zp">Bit width: 1</p></div> <div class="bdigit-ctl svelte-1ljy8zp"><button id="add-bdigit" class="svelte-1ljy8zp" data-svelte-h="svelte-61rde9">+</button> <button id="rem-bdigit" class="svelte-1ljy8zp" data-svelte-h="svelte-sj7ktv">-</button></div> </main> 
+		<div style="display: contents">  <main><div class="bdigit-list svelte-1nnvm8y"><div class="bdigit svelte-1nnvm8y"><p class="bdigit-val svelte-1nnvm8y">0</p> <p class="ddigit-val svelte-1nnvm8y">0</p> <button class="bdigit-toggle svelte-1nnvm8y" data-svelte-h="svelte-yqa8df">Toggle</button> </div></div> <div class="ddigit-total-container svelte-1nnvm8y"><p class="ddigit-total svelte-1nnvm8y">0</p> <p class="ddigit-bitwidth svelte-1nnvm8y">Bit width: 1</p></div> <div class="bdigit-ctl svelte-1nnvm8y"><button id="add-bdigit" class="svelte-1nnvm8y" data-svelte-h="svelte-61rde9">+</button> <button id="rem-bdigit" class="svelte-1nnvm8y" data-svelte-h="svelte-sj7ktv">-</button></div> </main> 
 			
 			<script>
 				{
-					__sveltekit_bos42i = {
+					__sveltekit_1x5362f = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/BinaryViz"
 					};
@@ -40,8 +47,8 @@ html, body {
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.CEVSCA_t.js"),
-						import("./_app/immutable/entry/app.DUGBj5R0.js")
+						import("./_app/immutable/entry/start.B90Bm8HO.js"),
+						import("./_app/immutable/entry/app.B1FgzP8n.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
