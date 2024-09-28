@@ -32,16 +32,6 @@
     margin: 4px 8px 12px 8px;
 }
 
-.bdigit-toggle {
-    margin: 8px 8px 16px 8px;
-    padding: 0.25rem;
-    min-width: 100%;
-    max-width: 100%;
-    border-radius: 16px;
-    background-color: #b4befe;
-    color: #1e1e2e;
-}
-
 .bdigit-ctl {
     display: flex;
     flex-direction: row;
