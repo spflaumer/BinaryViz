@@ -4,11 +4,16 @@
     flex-direction: row;
     justify-content: center;
     margin: auto;
+    max-width: 98%;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .bdigit {
-    margin: 1rem;
-    padding: 0rem 0.5rem;
+    appearance: unset;
+    border: none;
+    margin: 0.3rem;
+    padding: 0rem 0.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,19 +23,20 @@
 }
 
 .bdigit-val {
-    font-size: 3rem;
-    margin: 8px;
+    font-size: 2rem;
+    margin: 12px 8px 4px 8px;
 }
 
 .ddigit-val {
-    margin: 8px;
+    font-size: 1rem;
+    margin: 4px 8px 12px 8px;
 }
 
 .bdigit-toggle {
     margin: 8px 8px 16px 8px;
     padding: 0.25rem;
-    appearance: unset;
-    border: none;
+    min-width: 100%;
+    max-width: 100%;
     border-radius: 16px;
     background-color: #b4befe;
     color: #1e1e2e;
@@ -78,11 +84,10 @@
 <main>
 <div class="bdigit-list">
     {#each digits as digit, idx}
-        <div class="bdigit">
-            <p class="bdigit-val">{digit}</p>
-            <p class="ddigit-val">{digit * Math.pow(2, digits.length - idx - 1)}</p>
-            <button class="bdigit-toggle" on:click={toggle_digit(idx)}>Toggle</button>
-        </div>
+            <button class="bdigit" on:click={toggle_digit(idx)}>
+                    <p class="bdigit-val">{digit}</p>
+                    <p class="ddigit-val">{digit * Math.pow(2, digits.length - idx - 1)}</p>
+            </button>
     {/each}
 </div>
 
